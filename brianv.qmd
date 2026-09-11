@@ -9,5 +9,5 @@ this is a qmd file from Brian for the group repo for today's lecture
 Group repo is https://github.com/rsabilla/private
 
 
-i pushed a qmd file "brianv"
+i pushed a qmd file "brianv" 
 
