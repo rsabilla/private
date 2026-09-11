@@ -1,6 +1,10 @@
 ---
 title: "Brian V"
-format: html
+author: "Brian"
+format:
+  html:
+    embed-resources: true
+    standalone: true
 ---
 
 this is a qmd file from Brian for the group repo for today's lecture
@@ -13,11 +17,9 @@ i pushed a qmd file "brianv"
 
 
 
-Screenshots
+![Image 1](github-collab/image-1.png)
 
-![Github Repo](github-collab/image-1.png)
-
-![Positron](github-collab/image-2.png)
+![Image 2](github-collab/image-2.png)
 
 
 
