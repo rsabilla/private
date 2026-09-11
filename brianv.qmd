@@ -11,3 +11,13 @@ Group repo is https://github.com/rsabilla/private
 
 i pushed a qmd file "brianv" 
 
+
+
+Screenshots
+
+![Github Repo](github-collab/image-1.png)
+
+![Positron](github-collab/image-2.png)
+
+
+
