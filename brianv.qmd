@@ -1,0 +1,6 @@
+---
+title: "Brian V"
+format: html
+---
+
+this is a qmd file from Brian for the group repo for today's lecture
