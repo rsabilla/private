@@ -1,0 +1,15 @@
+---
+title: "Github Collab Alexa Bueno"
+author: "Alexa Bueno"
+format:
+  html:
+    embed-resources: true
+    standalone: true
+
+This is a qmd file from Alexa Bueno for the group repo for today's lecture.
+
+
+Group repo is https://github.com/rsabilla/private
+
+
+I have now pushed a qmd file "Github Collab Alexa Bueno" 
