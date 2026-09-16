@@ -38,29 +38,51 @@ When working with Git, it's important to understand that your files actually exi
 
 ## Prompt 3: Document Your Group's Round 1 Workflow
 
-> Describe the order in which group members completed Round 1... Present this information in a well-formatted table. Then explain why your group used a sequential workflow for this exercise.
+> Describe the order in which group members completed Round 1. For every member, report the member's name, the section or content added, whether the member pulled before editing, the commit message used, and how the member verified that the push succeeded. Present this information in a well-formatted table. Then explain why your group used a sequential workflow for this exercise.
 
-**Principal Author:** \[Author Name\]
+**Principal Author:** Kevin Bachez
 
-| Member Name | Section/Content Added | Pulled Before Editing? | Commit Message | Push Verification Method |
-|:--------------|:--------------|:--------------|:--------------|:--------------|
-| \[Name 1\] | \[Section\] | \[Yes/No\] | "\[Message\]" | \[Method\] |
-| \[Name 2\] | \[Section\] | \[Yes/No\] | "\[Message\]" | \[Method\] |
-| \[Name 3\] | \[Section\] | \[Yes/No\] | "\[Message\]" | \[Method\] |
+During Round 1, our group divided the ten prompts among four members. Brian Vuong completed Prompts 5 through 7, Ron Sabilla completed Prompts 1 and 2, Alexa Bueno completed Prompts 8 through 10, and Kevin Bachez completed Prompts 3 and 4. Based on the GitHub commit history, Brian completed his assigned prompts first, followed by Ron, Alexa, and then Kevin.
 
-\[Insert explanation of why a sequential workflow was used here.\]
+| Order | Group Member | Section/Content Added | Pulled Before Editing? | Commit Message | Push Verification Method |
+|:---|:---|:---|:---|:---|:---|
+| 1 | Brian Vuong | Prompts 5 through 7 | Not confirmed | `address prompts 5 to 7` | Confirmed that the commit and updated sections appeared in the GitHub repository |
+| 2 | Ron Sabilla | Prompts 1 and 2 | Not confirmed | `Kevin, Alexa, and Brian, don't forgot to choose what prompts to work on. I did the first two.` | Confirmed that the commit and updated sections appeared in the GitHub repository |
+| 3 | Alexa Bueno | Prompts 8 through 10 | Not confirmed | `Address prompt 8 to 10` | Confirmed that the commit and updated sections appeared in the GitHub repository |
+| 4 | Kevin Bachez | Prompts 3 and 4 | N/A — cloned the current repository before editing | `Add Kevin's responses for Prompts 3 and 4` | Confirmed that the commit and updated QMD/HTML files appeared in the GitHub repository |
+
+Our group used a sequential workflow to reduce the chance of multiple members editing the same shared QMD file at the same time. By assigning different prompts to each member and having members complete and push their work separately, the group reduced the possibility of overwriting another person's work or creating unnecessary merge conflicts.
+
+The sequential workflow also made the GitHub history easier to follow because each person's contribution could be connected to a specific commit and section of the report. Working from one shared repository gave the group one official version of the project and made it easier to identify the sequence, purpose, and authorship of the changes.
+
 
 ## Prompt 4: A Reliable Everyday CEP Workflow
 
-> Create a numbered checklist that a group member should follow every time they work on the CEP report... Explain why pulling before editing and using focused, descriptive commits make collaboration safer and make the project's history more useful.
+> Create a numbered checklist that a group member should follow every time they work on the CEP report, beginning before they edit and ending after they push. Explain why pulling before editing and using focused, descriptive commits make collaboration safer and make the project's history more useful.
 
-**Principal Author:** \[Author Name\]
+**Principal Author:** Kevin Bachez
 
-1.  \[Step 1: e.g., Open the project in your IDE\]
-2.  \[Step 2: e.g., Pull the latest changes from GitHub\]
-3.  \[Step 3...\]
+A reliable everyday workflow for working on the CEP report should follow these steps:
 
-\[Insert explanation of why pulling first and writing descriptive commits is critical.\]
+1. **Communicate with the group before beginning** and confirm which section or task you are responsible for.
+2. **Open the shared CEP repository** in Positron or RStudio.
+3. **Pull the most recent version from GitHub before editing** so the local repository contains the newest changes made by the group.
+4. **Review the updated files** and confirm that another group member is not currently editing the same section.
+5. **Edit the section or task assigned to you** and avoid making unnecessary changes to another member's work.
+6. **Save the QMD file** after completing your edits.
+7. **Render the Quarto document** and make sure the HTML report is created without errors.
+8. **Review the rendered report** to confirm that the content and formatting appear correctly.
+9. **Review the changes in the Source Control or Git pane** to see which files were modified.
+10. **Stage the appropriate files** that should be included in the commit.
+11. **Write a focused and descriptive commit message** that clearly explains the work completed.
+12. **Commit the changes** to the local Git repository.
+13. **Push the commit to the shared GitHub repository** using Positron, RStudio, or the IDE Terminal.
+14. **Verify the push on GitHub** by confirming that the new commit and updated files appear in the remote repository.
+15. **Notify the group that the push is complete** so the next member knows it is safe to pull the newest version and begin working.
+
+Pulling before editing is important because another group member may have pushed changes since the last time the repository was opened. If someone begins editing an outdated version of the report, their changes may conflict with newer work already stored on GitHub. Pulling first helps keep the local repository synchronized with the remote repository and reduces the possibility of unnecessary merge conflicts.
+
+Focused and descriptive commit messages also make collaboration safer and the project's history more useful. A message such as `Add Kevin's responses for Prompts 3 and 4` clearly identifies what was completed, while a vague message such as `update` does not provide enough information. Clear commit messages make it easier for the group and instructor to understand the sequence of work, identify who made each contribution, and review previous changes if a problem occurs. Following the pull, edit, render, review, stage, commit, and push workflow helps the group maintain one organized and reliable version of the CEP report.
 
 ## Prompt 5: Coordinating Work and Preventing Merge Conflicts (Brian)
 
