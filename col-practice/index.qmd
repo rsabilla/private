@@ -45,7 +45,7 @@ When working with Git, it's important to understand that your files actually exi
 During Round 1, our group divided the ten prompts among four members. Brian Vuong completed Prompts 5 through 7, Ron Sabilla completed Prompts 1 and 2, Alexa Bueno completed Prompts 8 through 10, and Kevin Bachez completed Prompts 3 and 4. Based on the GitHub commit history, Brian completed his assigned prompts first, followed by Ron, Alexa, and then Kevin.
 
 | Order | Group Member | Section/Content Added | Pulled Before Editing? | Commit Message | Push Verification Method |
-|:---|:---|:---|:---|:---|:---|
+|:-----------|:-----------|:-----------|:-----------|:-----------|:-----------|
 | 1 | Brian Vuong | Prompts 5 through 7 | Not confirmed | `address prompts 5 to 7` | Confirmed that the commit and updated sections appeared in the GitHub repository |
 | 2 | Ron Sabilla | Prompts 1 and 2 | Not confirmed | `Kevin, Alexa, and Brian, don't forgot to choose what prompts to work on. I did the first two.` | Confirmed that the commit and updated sections appeared in the GitHub repository |
 | 3 | Alexa Bueno | Prompts 8 through 10 | Not confirmed | `Address prompt 8 to 10` | Confirmed that the commit and updated sections appeared in the GitHub repository |
@@ -55,7 +55,6 @@ Our group used a sequential workflow to reduce the chance of multiple members ed
 
 The sequential workflow also made the GitHub history easier to follow because each person's contribution could be connected to a specific commit and section of the report. Working from one shared repository gave the group one official version of the project and made it easier to identify the sequence, purpose, and authorship of the changes.
 
-
 ## Prompt 4: A Reliable Everyday CEP Workflow
 
 > Create a numbered checklist that a group member should follow every time they work on the CEP report, beginning before they edit and ending after they push. Explain why pulling before editing and using focused, descriptive commits make collaboration safer and make the project's history more useful.
@@ -64,15 +63,15 @@ The sequential workflow also made the GitHub history easier to follow because ea
 
 A reliable everyday workflow for working on the CEP report should follow these steps:
 
-1. **Communicate with the group before beginning** and confirm which section or task you are responsible for.
-2. **Open the shared CEP repository** in Positron or RStudio.
-3. **Pull the most recent version from GitHub before editing** so the local repository contains the newest changes made by the group.
-4. **Review the updated files** and confirm that another group member is not currently editing the same section.
-5. **Edit the section or task assigned to you** and avoid making unnecessary changes to another member's work.
-6. **Save the QMD file** after completing your edits.
-7. **Render the Quarto document** and make sure the HTML report is created without errors.
-8. **Review the rendered report** to confirm that the content and formatting appear correctly.
-9. **Review the changes in the Source Control or Git pane** to see which files were modified.
+1.  **Communicate with the group before beginning** and confirm which section or task you are responsible for.
+2.  **Open the shared CEP repository** in Positron or RStudio.
+3.  **Pull the most recent version from GitHub before editing** so the local repository contains the newest changes made by the group.
+4.  **Review the updated files** and confirm that another group member is not currently editing the same section.
+5.  **Edit the section or task assigned to you** and avoid making unnecessary changes to another member's work.
+6.  **Save the QMD file** after completing your edits.
+7.  **Render the Quarto document** and make sure the HTML report is created without errors.
+8.  **Review the rendered report** to confirm that the content and formatting appear correctly.
+9.  **Review the changes in the Source Control or Git pane** to see which files were modified.
 10. **Stage the appropriate files** that should be included in the commit.
 11. **Write a focused and descriptive commit message** that clearly explains the work completed.
 12. **Commit the changes** to the local Git repository.
@@ -143,14 +142,14 @@ There are certain things that should never end up in the CEP repository no matte
 **Principal Author:** Alexa Bueno
 
 ::: {.callout-note title="Group Collaboration Agreement"}
-- **Pulling and pushing:** Everyone pulls before starting any edit session and pushes as soon as a section is finished, not at the end of the day.
-- **Task assignment:** Sections are assigned in our group chat before anyone starts editing, so two people aren't working on the same part without knowing it.
-- **Simultaneous editing:** We do not edit the same file at the same time. Whoever is working on a section says so in the chat, and says again once they've pushed.
-- **Commit messages:** Messages describe what was actually changed, written in plain language (for example "Add Prompt 9 response" instead of "update").
-- **Branches and pull requests:** We'll use a branch and pull request for anything that touches the structure of the whole report, like a big formatting change or something that could break the render for everyone. Small, coordinated edits to one section can go straight to main.
-- **Conflict resolution:** If a push gets rejected or a conflict pops up, the person who hit it pulls, resolves the conflict markers in Positron, checks with the other person if it's unclear what to keep, and renders before pushing again.
-- **Render verification:** Whoever makes a commit is responsible for confirming the report renders cleanly on their end before pushing.
-- **Confidentiality:** No real client names, credentials, or personal data go into the repository. We use a placeholder name for the client throughout
+-   **Pulling and pushing:** Everyone pulls before starting any edit session and pushes as soon as a section is finished, not at the end of the day.
+-   **Task assignment:** Sections are assigned in our group chat before anyone starts editing, so two people aren't working on the same part without knowing it.
+-   **Simultaneous editing:** We do not edit the same file at the same time. Whoever is working on a section says so in the chat, and says again once they've pushed.
+-   **Commit messages:** Messages describe what was actually changed, written in plain language (for example "Add Prompt 9 response" instead of "update").
+-   **Branches and pull requests:** We'll use a branch and pull request for anything that touches the structure of the whole report, like a big formatting change or something that could break the render for everyone. Small, coordinated edits to one section can go straight to main.
+-   **Conflict resolution:** If a push gets rejected or a conflict pops up, the person who hit it pulls, resolves the conflict markers in Positron, checks with the other person if it's unclear what to keep, and renders before pushing again.
+-   **Render verification:** Whoever makes a commit is responsible for confirming the report renders cleanly on their end before pushing.
+-   **Confidentiality:** No real client names, credentials, or personal data go into the repository. We use a placeholder name for the client throughout
 :::
 
 ------------------------------------------------------------------------
@@ -165,16 +164,16 @@ Detailed collaboration logs and repository links are provided below.
 |:-----------------|:-----------------|:-----------------|:-----------------|
 | \[Ron Sabilla\] | [@rsabilla] | "Kevin, Alexa, and Brian don't forget to choose what prompts to work on. I did the first two." | "Made some edits to prompt 1 and 2." |
 | \[Brian Vuong\] | [@brianvuong1] | "address prompt 5 to 7" | "added member commit record" |
-| \[\] | \[\] |  | "\[Message\]" |
+| Kevin Bachez | [@kebachez] | "Add edresponses for Prompts 3 and 4" | "\[Your Round 2 commit message\]" |
 | \[Alexa Bueno\] | \[buenoalexa11\] | "Address prompt 8 to 10" | "Final edit of 8 to 10" |
 
 ### Project Links
 
-- **GitHub Repository:** https://github.com/rsabilla/private
-- **GitHub Pages Published Report:** \[Insert Link Here\]
-- **Repository Commit History:** \[Insert Link Here\]
+-   **GitHub Repository:** <https://github.com/rsabilla/private>
+-   **GitHub Pages Published Report:** <https://rsabilla.github.io/private/>
+-   **Repository Commit History:** \[Insert Link Here\]
 
 ### Verification Statements
 
-- **Workflow Confirmation:** All members confirm that they exclusively used Positron to pull, commit, and push their changes for this project.
-- **Finalization:** The final pull, render, link check, and push were performed by **\[Insert Name of Final Reviewer\]**.
+-   **Workflow Confirmation:** All members confirm that they exclusively used Positron to pull, commit, and push their changes for this project.
+-   **Finalization:** The final pull, render, link check, and push were performed by **\[Insert Name of Final Reviewer\]**.
