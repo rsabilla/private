@@ -148,7 +148,7 @@ Detailed collaboration logs and repository links are provided below.
 | Member Name | GitHub Username | Round 1 Commit Message | Round 2 Commit Message |
 |:-----------------|:-----------------|:-----------------|:-----------------|
 | \[Ron Sabilla\] | [@rsabilla] | "Kevin, Alexa, and Brian don't forget to choose what prompts to work on. I did the first two." | "Made some edits to prompt 1 and 2." |
-| \[Name 2\] | [@username] | "\[Message\]" | "\[Message\]" |
+| \[Brian Vuong\] | [@brianvuong1] | "address prompt 5 to 7" | "added member commit record" |
 | \[Name 3\] | [@username] | "\[Message\]" | "\[Message\]" |
 | \[Name 4\] | [@username] | "\[Message\]" | "\[Message\]" |
 
