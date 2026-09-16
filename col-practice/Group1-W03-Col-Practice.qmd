@@ -21,3 +21,138 @@ execute:
 
 
 
+# Essay Prompts
+
+## Prompt 1: Repository Setup and Shared Ownership
+> Explain how your group created its CEP repository from the MSDM CEP template, selected an appropriate visibility setting, invited collaborators, and ensured that every member cloned the same repository. Clearly distinguish among using a template, creating a repository, and cloning a repository. Why would independently cloning or copying the original template create problems for group collaboration?
+
+**Principal Author:** [Author Name]
+
+[Insert your group's response here. Ensure you define the difference between using a template, creating, and cloning. Discuss how separate clones of a template create disconnected histories.]
+
+## Prompt 2: Local, Remote, and Working Files
+> Explain the relationship among the files on your computer, the local Git repository, and the remote repository on GitHub. In your explanation, distinguish among saving, staging, committing, pushing, fetching, and pulling. Why does saving a QMD file on your computer not make the change available to your teammates?
+
+**Principal Author:** [Author Name]
+
+[Insert your group's response here. Be sure to explain the flow from the working directory to the staging area, local repo, and finally the remote repo.]
+
+## Prompt 3: Document Your Group's Round 1 Workflow
+> Describe the order in which group members completed Round 1... Present this information in a well-formatted table. Then explain why your group used a sequential workflow for this exercise.
+
+**Principal Author:** [Author Name]
+
+| Member Name | Section/Content Added | Pulled Before Editing? | Commit Message | Push Verification Method |
+|:---|:---|:---|:---|:---|
+| [Name 1] | [Section] | [Yes/No] | "[Message]" | [Method] |
+| [Name 2] | [Section] | [Yes/No] | "[Message]" | [Method] |
+| [Name 3] | [Section] | [Yes/No] | "[Message]" | [Method] |
+
+[Insert explanation of why a sequential workflow was used here.]
+
+## Prompt 4: A Reliable Everyday CEP Workflow
+> Create a numbered checklist that a group member should follow every time they work on the CEP report... Explain why pulling before editing and using focused, descriptive commits make collaboration safer and make the project's history more useful.
+
+**Principal Author:** [Author Name]
+
+1. [Step 1: e.g., Open the project in your IDE]
+2. [Step 2: e.g., Pull the latest changes from GitHub]
+3. [Step 3...]
+
+[Insert explanation of why pulling first and writing descriptive commits is critical.]
+
+## Prompt 5: Coordinating Work and Preventing Merge Conflicts (Brian)
+> Explain what may happen when two people edit the same lines of the same QMD file and then attempt to push their work. Describe at least three practices your group will use during the CEP to reduce merge conflicts. Include how your group will divide sections, communicate who is editing, and decide when work is ready for another member.
+
+**Principal Author:** [Author Name]
+
+When two collaborators edit the exact same lines of a QMD file simultaneously, Git cannot automatically determine which version to keep. The first person to push their changes to the remote repository will succeed. However, when the second person attempts to push, Git will reject the action to prevent overwriting the first person's work. The second person must then pull the recent changes, which triggers a "merge conflict." The file will be populated with conflict markers (showing both versions), and the second person must manually resolve the discrepancies before they can successfully complete their commit and push.
+
+To minimize these disruptions, our group will implement three primary practices. 
+
+::: {.panel-tabset}
+### 1. Section Division
+We will assign specific sections or distinct files to individual members. By ensuring we are not working on the exact same lines of code or text at the same time, Git can usually auto-merge our files cleanly.
+
+### 2. Active Communication
+We will maintain a group chat (e.g., Discord or Slack) where members must announce when they are opening the document to make edits and when they have successfully pushed their work. This "checkout" system prevents overlapping work sessions.
+
+### 3. Frequent Commits
+We will make small, frequent commits and push our work regularly. Shorter work cycles mean fewer overarching changes at once, making it much easier to integrate work and limiting the scope of any conflicts that do occur.
+:::
+
+## Prompt 6: Responding to a Push Rejection or Merge Conflict (Brian)
+> Consider this situation: A group member edits the report without pulling first. Meanwhile, another member pushes changes to the same section. Git rejects the first member's push, and a merge conflict appears after pulling. Explain, in order, what the first member should do... Also explain why force-pushing, deleting a teammate's work, or replacing the repository with an older local copy would be inappropriate.
+
+**Principal Author:** [Author Name]
+
+When a push is rejected due to upstream changes, the first member must immediately pull from the remote repository. This action will trigger a merge conflict notification. The member should then open the affected QMD file in Positron's Merge Editor[^1] or look for standard Git conflict markers (`<<<<<<< HEAD`, `=======`, `>>>>>>>`). These markers visually separate the local changes from the incoming changes. The member must carefully compare the two versions, edit the text to keep the desired content (which may be a combination of both), and completely delete all conflict markers. Finally, they must render the document to ensure the formatting is unbroken, save the file, stage it, commit the resolved merge, and push it to GitHub.
+
+It is absolutely critical to handle conflicts through this established resolution process rather than resorting to destructive alternatives. Force-pushing (`git push --force`) overwrites the remote repository with the local version, permanently erasing the teammate's hard work. Similarly, deleting a teammate's additions to force a commit ignores collaborative progress, and replacing the repository with an older local copy completely corrupts the shared version history. These actions break the fundamental purpose of version control and can set a project back by hours or days.
+
+[^1]: Positron is an IDE built for data science that includes intuitive visual tools for identifying and resolving Git merge conflicts.
+
+## Prompt 7: Branches, Issues, and Pull Requests (Brian)
+> Based on the collaboration video, explain the purposes of a GitHub Issue, a branch, and a pull request. How could these tools support task assignment, review, and approval during a longer CEP project? Contrast this approach with making a small, coordinated change directly on the main branch. Identify at least one situation in which your group should prefer a branch and pull request.
+
+**Principal Author:** [Author Name]
+
+In a structured GitHub workflow, an **Issue** acts as a tracking ticket for a specific bug, task, or feature, allowing the team to assign responsibilities and discuss requirements before coding begins. A **branch** provides a safe, isolated workspace where a team member can develop a feature without affecting the stable `main` codebase. Once the work on the branch is complete, a **Pull Request (PR)** is opened. A PR is a formal request to merge the branch into `main`, providing a dedicated space for teammates to review the code, suggest edits, and ensure the project renders correctly before final approval. For a long-term CEP project, these tools create a clear audit trail of who is doing what, ensure quality control through peer review, and prevent unstable code from breaking the final report.
+
+This structured approach contrasts heavily with committing directly to the `main` branch. Direct commits are highly efficient for small, coordinated updates—like fixing a quick typo or adding a simple, pre-discussed paragraph where the risk of breaking the project is virtually zero. However, our group should definitively prefer a branch and PR workflow when executing a major structural change, such as overhauling the data analysis pipeline or applying a complex custom CSS theme. In these high-risk scenarios, the isolated branch allows for trial and error, and the PR ensures at least one other set of eyes verifies that the data and formatting are correct before it impacts everyone else's work.
+
+## Prompt 8: Review the Repository History
+> Review the repository's commit history after both collaboration rounds. What evidence shows that all members worked through Git and GitHub rather than exchanging separate files?...
+
+**Principal Author:** [Author Name]
+
+[Insert your group's response here. Look at the Git commit graph and timestamps.]
+
+## Prompt 9: Security, Confidentiality, and Repository Hygiene
+> Explain what materials must never be pushed to the CEP repository, even when it is private...
+
+**Principal Author:** [Author Name]
+
+[Insert your group's response here. Discuss API keys, `.gitignore`, and asking for help before pushing if unsure.]
+
+## Prompt 10: Group Collaboration Agreement
+> Develop a short Git/GitHub collaboration agreement that your group will follow for the remainder of the CEP... Place the agreement in a callout block. Every member should review it, and the report should state that all members agree to follow it.
+
+**Principal Author:** [Author Name]
+
+All members of this group have reviewed and agree to abide by the following protocol:
+
+::: {.callout-note title="Group Collaboration Agreement"}
+*   **Pull/Push Frequency:** We will pull at the start of every work session and push immediately after completing a cohesive chunk of work.
+*   **Task Assignment:** Tasks will be assigned via [Discord/GitHub Issues].
+*   **Simultaneous Editing:** We will strictly avoid editing the same file concurrently. 
+*   **Commit Messages:** Messages will be written in the imperative mood and clearly state what the commit changes (e.g., "Add EDA scatterplot").
+*   **Branches/PRs:** We will use branches and Pull Requests for large structural changes or new analytical models.
+*   **Conflict Resolution:** If a conflict occurs, the member who encounters it will resolve it using Positron/RStudio, communicate with the involved partner if uncertain, and test the render before pushing.
+*   **Rendering:** The author of a commit is responsible for ensuring the report successfully renders locally before pushing.
+*   **Security:** No API keys, tokens, or raw confidential client data will ever be committed. We will utilize our `.gitignore` file strictly.
+:::
+
+---
+
+# Appendix: Collaboration Evidence {#sec-appendix}
+
+Detailed collaboration logs and repository links are provided below. 
+
+### Member Commit Records
+
+| Member Name | GitHub Username | Round 1 Commit Message | Round 2 Commit Message |
+|:---|:---|:---|:---|
+| [Name 1] | [@username] | "[Message]" | "[Message]" |
+| [Name 2] | [@username] | "[Message]" | "[Message]" |
+| [Name 3] | [@username] | "[Message]" | "[Message]" |
+| [Name 4] | [@username] | "[Message]" | "[Message]" |
+
+### Project Links
+*   **GitHub Repository:** [Insert Link Here]
+*   **GitHub Pages Published Report:** [Insert Link Here]
+*   **Repository Commit History:** [Insert Link Here]
+
+### Verification Statements
+*   **Workflow Confirmation:** All members confirm that they exclusively used Positron, RStudio, or the IDE Terminal to pull, commit, and push their changes for this project.
+*   **Finalization:** The final pull, render, link check, and push were performed by **[Insert Name of Final Reviewer]**.
