@@ -24,17 +24,17 @@ execute:
 
 > Explain how your group created its CEP repository from the MSDM CEP template, selected an appropriate visibility setting, invited collaborators, and ensured that every member cloned the same repository. Clearly distinguish among using a template, creating a repository, and cloning a repository. Why would independently cloning or copying the original template create problems for group collaboration?
 
-**Principal Author:** \[Ron Sabilla\]
+**Principal Author:** Ron Sabilla
 
-\[To get our group project started, one of us went into the MSDM CEP template on GitHub and clicked "Use this template" to create a brand new repository based on it, which basically copies all the files over without bringing along the original commit history. From there, we set the visibility and the person who created it sent collaborator invites to the rest of the group through the repository settings so everyone had access. Each of us then cloned that same repository to our own laptops using `git clone`, which is what actually connects our local copy to the shared remote on GitHub. It helps to know the difference between these actions — using a template makes a new repo from a blueprint, creating a repo starts one from nothing, and cloning just pulls an existing one down to your computer. If everyone had gone and cloned or copied the original template on their own instead of sharing the one we created, we would have all ended up with completely separate repositories that have no connection to each other. That would have made it impossible to actually collaborate through Git since no one's changes would ever show up for anyone else.\]
+To get our group project started, one of us went into the MSDM CEP template on GitHub and clicked "Use this template" to create a brand new repository based on it, which basically copies all the files over without bringing along the original commit history. From there, we set the visibility and the person who created it sent collaborator invites to the rest of the group through the repository settings so everyone had access. Each of us then cloned that same repository to our own laptops using `git clone`, which is what actually connects our local copy to the shared remote on GitHub. It helps to know the difference between these actions — using a template makes a new repo from a blueprint, creating a repo starts one from nothing, and cloning just pulls an existing one down to your computer. If everyone had gone and cloned or copied the original template on their own instead of sharing the one we created, we would have all ended up with completely separate repositories that have no connection to each other. That would have made it impossible to actually collaborate through Git since no one's changes would ever show up for anyone else.
 
 ## Prompt 2: Local, Remote, and Working Files
 
 > Explain the relationship among the files on your computer, the local Git repository, and the remote repository on GitHub. In your explanation, distinguish among saving, staging, committing, pushing, fetching, and pulling. Why does saving a QMD file on your computer not make the change available to your teammates?
 
-**Principal Author:** \[Ron Sabilla\]
+**Principal Author:** Ron Sabilla
 
-\[When working with Git, it's important to understand that your files actually exist at three different levels at the same time. There are your working files, which are just the files sitting in your folder that you open and edit; your local Git repository, which is tracking changes on your own computer; and the remote repository on GitHub, which is the shared version everyone on the team syncs to. When you hit save on your `.qmd` file, that only updates the file on your laptop — Git hasn't recorded anything yet. To actually log that change in Git, you have to stage it with `git add` and then commit it with `git commit`, which saves a snapshot of your work to your local repo with a message describing what you did. Even after you commit, your teammates still can't see it until you push it with `git push`, which sends your commits up to GitHub. And on the flip side, when someone else pushes their work, you have to pull it down to your own machine to actually get their updates — which is why just saving your file is nowhere near enough for group collaboration.\]
+When working with Git, it's important to understand that your files actually exist at three different levels at the same time. There are your working files, which are just the files sitting in your folder that you open and edit; your local Git repository, which is tracking changes on your own computer; and the remote repository on GitHub, which is the shared version everyone on the team syncs to. When you hit save on your `.qmd` file, that only updates the file on your laptop — Git hasn't recorded anything yet. To actually log that change in Git, you have to stage it with `git add` and then commit it with `git commit`, which saves a snapshot of your work to your local repo with a message describing what you did. Even after you commit, your teammates still can't see it until you push it with `git push`, which sends your commits up to GitHub. And on the flip side, when someone else pushes their work, you have to pull it down to your own machine to actually get their updates — which is why just saving your file is nowhere near enough for group collaboration.
 
 ## Prompt 3: Document Your Group's Round 1 Workflow
 
@@ -147,10 +147,10 @@ Detailed collaboration logs and repository links are provided below.
 
 | Member Name | GitHub Username | Round 1 Commit Message | Round 2 Commit Message |
 |:-----------------|:-----------------|:-----------------|:-----------------|
-| \[Name 1\]  | [@username]     | "\[Message\]"          | "\[Message\]"          |
-| \[Name 2\]  | [@username]     | "\[Message\]"          | "\[Message\]"          |
-| \[Name 3\]  | [@username]     | "\[Message\]"          | "\[Message\]"          |
-| \[Name 4\]  | [@username]     | "\[Message\]"          | "\[Message\]"          |
+| \[Ron Sabilla\] | [@rsabilla] | "Kevin, Alexa, and Brian don't forget to choose what prompts to work on. I did the first two." | "\[Message\]" |
+| \[Name 2\] | [@username] | "\[Message\]" | "\[Message\]" |
+| \[Name 3\] | [@username] | "\[Message\]" | "\[Message\]" |
+| \[Name 4\] | [@username] | "\[Message\]" | "\[Message\]" |
 
 ### Project Links
 
