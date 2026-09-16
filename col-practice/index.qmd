@@ -170,8 +170,7 @@ Detailed collaboration logs and repository links are provided below.
 ### Project Links
 
 -   **GitHub Repository:** <https://github.com/rsabilla/private>
--   **GitHub Pages Published Report:** <https://rsabilla.github.io/private/>
--   **Repository Commit History:** \[Insert Link Here\]
+-   - **GitHub Pages Published Report:** <https://rsabilla.github.io/private/col-practice/>
 
 ### Verification Statements
 
