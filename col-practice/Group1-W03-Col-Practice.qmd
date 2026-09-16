@@ -1,0 +1,19 @@
+---
+title: "W03: CEP Repository and Collaboration Practice"
+author: "Names of All Group Members"
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 4
+    toc-expand: true
+    number-sections: true
+    code-link: true
+    code-overflow: wrap
+    code-tools: true
+    embed-resources: true
+    theme: cosmo
+editor: visual
+execute:
+  freeze: auto
+---
