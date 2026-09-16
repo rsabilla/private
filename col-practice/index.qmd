@@ -164,7 +164,7 @@ Detailed collaboration logs and repository links are provided below.
 |:-----------------|:-----------------|:-----------------|:-----------------|
 | \[Ron Sabilla\] | [@rsabilla] | "Kevin, Alexa, and Brian don't forget to choose what prompts to work on. I did the first two." | "Made some edits to prompt 1 and 2." |
 | \[Brian Vuong\] | [@brianvuong1] | "address prompt 5 to 7" | "added member commit record" |
-| Kevin Bachez | [@kebachez] | "Add edresponses for Prompts 3 and 4" | "\[Your Round 2 commit message\]" |
+| Kevin Bachez | [@kebachez] | "Add edresponses for Prompts 3 and 4" | "answered propmt 3 & 4" |
 | \[Alexa Bueno\] | \[buenoalexa11\] | "Address prompt 8 to 10" | "Final edit of 8 to 10" |
 
 ### Project Links
@@ -175,4 +175,4 @@ Detailed collaboration logs and repository links are provided below.
 ### Verification Statements
 
 -   **Workflow Confirmation:** All members confirm that they exclusively used Positron to pull, commit, and push their changes for this project.
--   **Finalization:** The final pull, render, link check, and push were performed by **\[Insert Name of Final Reviewer\]**.
+-   **Finalization:** The final pull, render, link check, and push were performed by Kevin Bachez
