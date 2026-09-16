@@ -104,37 +104,52 @@ This structured approach contrasts heavily with committing directly to the `main
 
 ## Prompt 8: Review the Repository History
 
-> Review the repository's commit history after both collaboration rounds. What evidence shows that all members worked through Git and GitHub rather than exchanging separate files?...
+**Principal Author:** Alexa Bueno
 
-**Principal Author:** \[Author Name\]
-
-\[Insert your group's response here. Look at the Git commit graph and timestamps.\]
+Looking at our repository's commit history, you can see entries tied to different usernames, \@rsabilla, \@brianvuong1, \@kbachez, and \@buenoalexa11, rather than one person uploading a finished file. That alone shows the report was actually built through Git instead of being assembled outside of it and dropped in. The sequence also makes sense chronologically: early commits set up the folder and file structure, then each member's Round 1 commit adds their assigned content ("address prompt 5 to 7," "Address prompt 8 to 10," "address prompt 3 and 4"), and Round 2 commits show people going back through the report to review and add to it, like Brian's "added member commit record." That progression, content getting added first and then refined later, is exactly what you'd expect from a two-round collaboration process, and it wouldn't show up at all if we had just emailed a Word doc back and forth. The most effective commit message in our history is "address prompt 5 to 7," because it tells you precisely what content was added without needing to open the file to check. That's a clear contrast to some of the shorter messages elsewhere in our log, like "edit" or "edits," which don't tell a future reader anything about what actually changed. A specific message like that one is what makes the project history genuinely useful later, since you can find exactly when a section was written just by scanning the log instead of digging through every commit.
 
 ## Prompt 9: Security, Confidentiality, and Repository Hygiene
 
-> Explain what materials must never be pushed to the CEP repository, even when it is private...
+**Principal Author:** Alexa Bueno
 
-**Principal Author:** \[Author Name\]
-
-\[Insert your group's response here. Discuss API keys, `.gitignore`, and asking for help before pushing if unsure.\]
+There are certain things that should never end up in the CEP repository no matter what, even though it's currently private. This includes any real client data, especially anything that could identify a specific company or person, since the assignment instructions specifically told us to use a fake name for our client rather than the real one. It also includes personally identifiable information about survey respondents, passwords, API keys, and access tokens like the ones we'd use to connect to GA4 or BigQuery. These are the kind of things that if accidentally pushed, stay in the commit history forever even if you delete the file afterward, since Git keeps a record of every version. This is where a .gitignore file matters, because it tells Git which files or file types to automatically ignore so they never get staged in the first place, things like local environment files, temporary render files, or anything with credentials in the name. If someone on our team is ever unsure whether something is okay to push, the safest move is to just ask the rest of the group or the professor before committing it, rather than pushing first and hoping it's fine. Once something is on GitHub, especially if the repo gets made public later for the Pages site to work, there's no guarantee it can be fully removed.
 
 ## Prompt 10: Group Collaboration Agreement
 
-> Develop a short Git/GitHub collaboration agreement that your group will follow for the remainder of the CEP... Place the agreement in a callout block. Every member should review it, and the report should state that all members agree to follow it.
+> All members of this group have reviewed this agreement and agree to follow it for the remainder of the CEP.
 
-**Principal Author:** \[Author Name\]
-
-All members of this group have reviewed and agree to abide by the following protocol:
+**Principal Author:** Alexa Bueno
 
 ::: {.callout-note title="Group Collaboration Agreement"}
--   **Pull/Push Frequency:** We will pull at the start of every work session and push immediately after completing a cohesive chunk of work.
--   **Task Assignment:** Tasks will be assigned via \[Discord/GitHub Issues\].
--   **Simultaneous Editing:** We will strictly avoid editing the same file concurrently.
--   **Commit Messages:** Messages will be written in the imperative mood and clearly state what the commit changes (e.g., "Add EDA scatterplot").
--   **Branches/PRs:** We will use branches and Pull Requests for large structural changes or new analytical models.
--   **Conflict Resolution:** If a conflict occurs, the member who encounters it will resolve it using Positron/RStudio, communicate with the involved partner if uncertain, and test the render before pushing.
--   **Rendering:** The author of a commit is responsible for ensuring the report successfully renders locally before pushing.
--   **Security:** No API keys, tokens, or raw confidential client data will ever be committed. We will utilize our `.gitignore` file strictly.
+- **Pulling and pushing:** Everyone pulls before starting any edit session and pushes as soon as a section is finished, not at the end of the day.
+
+<!-- -->
+
+- **Task assignment:** Sections are assigned in our group chat before anyone starts editing, so two people aren't working on the same part without knowing it.
+
+<!-- -->
+
+- **Simultaneous editing:** We do not edit the same file at the same time. Whoever is working on a section says so in the chat, and says again once they've pushed.
+
+<!-- -->
+
+- **Commit messages:** Messages describe what was actually changed, written in plain language (for example "Add Prompt 9 response" instead of "update").
+
+<!-- -->
+
+- **Branches and pull requests:** We'll use a branch and pull request for anything that touches the structure of the whole report, like a big formatting change or something that could break the render for everyone. Small, coordinated edits to one section can go straight to main.
+
+<!-- -->
+
+- **Conflict resolution:** If a push gets rejected or a conflict pops up, the person who hit it pulls, resolves the conflict markers in Positron, checks with the other person if it's unclear what to keep, and renders before pushing again.
+
+<!-- -->
+
+- **Render verification:** Whoever makes a commit is responsible for confirming the report renders cleanly on their end before pushing.
+
+<!-- -->
+
+- **Confidentiality:** No real client names, credentials, or personal data go into the repository. We use a placeholder name for the client throughout.
 :::
 
 ------------------------------------------------------------------------
@@ -149,16 +164,16 @@ Detailed collaboration logs and repository links are provided below.
 |:-----------------|:-----------------|:-----------------|:-----------------|
 | \[Ron Sabilla\] | [@rsabilla] | "Kevin, Alexa, and Brian don't forget to choose what prompts to work on. I did the first two." | "Made some edits to prompt 1 and 2." |
 | \[Brian Vuong\] | [@brianvuong1] | "address prompt 5 to 7" | "added member commit record" |
-| \[Name 3\] | [@username] | "\[Message\]" | "\[Message\]" |
-| \[Name 4\] | [@username] | "\[Message\]" | "\[Message\]" |
+| \[\] | \[\] |  | "\[Message\]" |
+| \[Alexa Bueno\] | \[buenoalexa11\] | "Address prompt 8 to 10" | "Final edit of 8 to 10" |
 
 ### Project Links
 
--   **GitHub Repository:** https://github.com/rsabilla/private
--   **GitHub Pages Published Report:** \[Insert Link Here\]
--   **Repository Commit History:** \[Insert Link Here\]
+- **GitHub Repository:** https://github.com/rsabilla/private
+- **GitHub Pages Published Report:** \[Insert Link Here\]
+- **Repository Commit History:** \[Insert Link Here\]
 
 ### Verification Statements
 
--   **Workflow Confirmation:** All members confirm that they exclusively used Positron to pull, commit, and push their changes for this project.
--   **Finalization:** The final pull, render, link check, and push were performed by **\[Insert Name of Final Reviewer\]**.
+- **Workflow Confirmation:** All members confirm that they exclusively used Positron to pull, commit, and push their changes for this project.
+- **Finalization:** The final pull, render, link check, and push were performed by **\[Insert Name of Final Reviewer\]**.
