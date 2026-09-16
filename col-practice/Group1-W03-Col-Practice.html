@@ -2413,27 +2413,20 @@ vertical-align: -.125em;
 </section>
 <section id="prompt-8-review-the-repository-history" class="level2" data-number="1.8">
 <h2 data-number="1.8" class="anchored" data-anchor-id="prompt-8-review-the-repository-history"><span class="header-section-number">1.8</span> Prompt 8: Review the Repository History</h2>
-<blockquote class="blockquote">
-<p>Review the repository’s commit history after both collaboration rounds. What evidence shows that all members worked through Git and GitHub rather than exchanging separate files?…</p>
-</blockquote>
-<p><strong>Principal Author:</strong> [Author Name]</p>
-<p>[Insert your group’s response here. Look at the Git commit graph and timestamps.]</p>
+<p><strong>Principal Author:</strong> Alexa Bueno</p>
+<p>Looking at our repository’s commit history, you can see entries tied to different usernames, @rsabilla, @brianvuong1, @kbachez, and @buenoalexa11, rather than one person uploading a finished file. That alone shows the report was actually built through Git instead of being assembled outside of it and dropped in. The sequence also makes sense chronologically: early commits set up the folder and file structure, then each member’s Round 1 commit adds their assigned content (“address prompt 5 to 7,” “Address prompt 8 to 10,” “address prompt 3 and 4”), and Round 2 commits show people going back through the report to review and add to it, like Brian’s “added member commit record.” That progression, content getting added first and then refined later, is exactly what you’d expect from a two-round collaboration process, and it wouldn’t show up at all if we had just emailed a Word doc back and forth. The most effective commit message in our history is “address prompt 5 to 7,” because it tells you precisely what content was added without needing to open the file to check. That’s a clear contrast to some of the shorter messages elsewhere in our log, like “edit” or “edits,” which don’t tell a future reader anything about what actually changed. A specific message like that one is what makes the project history genuinely useful later, since you can find exactly when a section was written just by scanning the log instead of digging through every commit.</p>
 </section>
 <section id="prompt-9-security-confidentiality-and-repository-hygiene" class="level2" data-number="1.9">
 <h2 data-number="1.9" class="anchored" data-anchor-id="prompt-9-security-confidentiality-and-repository-hygiene"><span class="header-section-number">1.9</span> Prompt 9: Security, Confidentiality, and Repository Hygiene</h2>
-<blockquote class="blockquote">
-<p>Explain what materials must never be pushed to the CEP repository, even when it is private…</p>
-</blockquote>
-<p><strong>Principal Author:</strong> [Author Name]</p>
-<p>[Insert your group’s response here. Discuss API keys, <code>.gitignore</code>, and asking for help before pushing if unsure.]</p>
+<p><strong>Principal Author:</strong> Alexa Bueno</p>
+<p>There are certain things that should never end up in the CEP repository no matter what, even though it’s currently private. This includes any real client data, especially anything that could identify a specific company or person, since the assignment instructions specifically told us to use a fake name for our client rather than the real one. It also includes personally identifiable information about survey respondents, passwords, API keys, and access tokens like the ones we’d use to connect to GA4 or BigQuery. These are the kind of things that if accidentally pushed, stay in the commit history forever even if you delete the file afterward, since Git keeps a record of every version. This is where a .gitignore file matters, because it tells Git which files or file types to automatically ignore so they never get staged in the first place, things like local environment files, temporary render files, or anything with credentials in the name. If someone on our team is ever unsure whether something is okay to push, the safest move is to just ask the rest of the group or the professor before committing it, rather than pushing first and hoping it’s fine. Once something is on GitHub, especially if the repo gets made public later for the Pages site to work, there’s no guarantee it can be fully removed.</p>
 </section>
 <section id="prompt-10-group-collaboration-agreement" class="level2" data-number="1.10">
 <h2 data-number="1.10" class="anchored" data-anchor-id="prompt-10-group-collaboration-agreement"><span class="header-section-number">1.10</span> Prompt 10: Group Collaboration Agreement</h2>
 <blockquote class="blockquote">
-<p>Develop a short Git/GitHub collaboration agreement that your group will follow for the remainder of the CEP… Place the agreement in a callout block. Every member should review it, and the report should state that all members agree to follow it.</p>
+<p>All members of this group have reviewed this agreement and agree to follow it for the remainder of the CEP.</p>
 </blockquote>
-<p><strong>Principal Author:</strong> [Author Name]</p>
-<p>All members of this group have reviewed and agree to abide by the following protocol:</p>
+<p><strong>Principal Author:</strong> Alexa Bueno</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Group Collaboration Agreement">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -2445,14 +2438,35 @@ vertical-align: -.125em;
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li><strong>Pull/Push Frequency:</strong> We will pull at the start of every work session and push immediately after completing a cohesive chunk of work.</li>
-<li><strong>Task Assignment:</strong> Tasks will be assigned via [Discord/GitHub Issues].</li>
-<li><strong>Simultaneous Editing:</strong> We will strictly avoid editing the same file concurrently.</li>
-<li><strong>Commit Messages:</strong> Messages will be written in the imperative mood and clearly state what the commit changes (e.g., “Add EDA scatterplot”).</li>
-<li><strong>Branches/PRs:</strong> We will use branches and Pull Requests for large structural changes or new analytical models.</li>
-<li><strong>Conflict Resolution:</strong> If a conflict occurs, the member who encounters it will resolve it using Positron/RStudio, communicate with the involved partner if uncertain, and test the render before pushing.</li>
-<li><strong>Rendering:</strong> The author of a commit is responsible for ensuring the report successfully renders locally before pushing.</li>
-<li><strong>Security:</strong> No API keys, tokens, or raw confidential client data will ever be committed. We will utilize our <code>.gitignore</code> file strictly.</li>
+<li><strong>Pulling and pushing:</strong> Everyone pulls before starting any edit session and pushes as soon as a section is finished, not at the end of the day.</li>
+</ul>
+<!-- -->
+<ul>
+<li><strong>Task assignment:</strong> Sections are assigned in our group chat before anyone starts editing, so two people aren’t working on the same part without knowing it.</li>
+</ul>
+<!-- -->
+<ul>
+<li><strong>Simultaneous editing:</strong> We do not edit the same file at the same time. Whoever is working on a section says so in the chat, and says again once they’ve pushed.</li>
+</ul>
+<!-- -->
+<ul>
+<li><strong>Commit messages:</strong> Messages describe what was actually changed, written in plain language (for example “Add Prompt 9 response” instead of “update”).</li>
+</ul>
+<!-- -->
+<ul>
+<li><strong>Branches and pull requests:</strong> We’ll use a branch and pull request for anything that touches the structure of the whole report, like a big formatting change or something that could break the render for everyone. Small, coordinated edits to one section can go straight to main.</li>
+</ul>
+<!-- -->
+<ul>
+<li><strong>Conflict resolution:</strong> If a push gets rejected or a conflict pops up, the person who hit it pulls, resolves the conflict markers in Positron, checks with the other person if it’s unclear what to keep, and renders before pushing again.</li>
+</ul>
+<!-- -->
+<ul>
+<li><strong>Render verification:</strong> Whoever makes a commit is responsible for confirming the report renders cleanly on their end before pushing.</li>
+</ul>
+<!-- -->
+<ul>
+<li><strong>Confidentiality:</strong> No real client names, credentials, or personal data go into the repository. We use a placeholder name for the client throughout.</li>
 </ul>
 </div>
 </div>
@@ -2493,16 +2507,16 @@ vertical-align: -.125em;
 <td style="text-align: left;">“added member commit record”</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">[Name 3]</td>
-<td style="text-align: left;"><span class="citation" data-cites="username">[@username]</span></td>
-<td style="text-align: left;">“[Message]”</td>
+<td style="text-align: left;">[]</td>
+<td style="text-align: left;">[]</td>
+<td style="text-align: left;"></td>
 <td style="text-align: left;">“[Message]”</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">[Name 4]</td>
-<td style="text-align: left;"><span class="citation" data-cites="username">[@username]</span></td>
-<td style="text-align: left;">“[Message]”</td>
-<td style="text-align: left;">“[Message]”</td>
+<td style="text-align: left;">[Alexa Bueno]</td>
+<td style="text-align: left;">[buenoalexa11]</td>
+<td style="text-align: left;">“Address prompt 8 to 10”</td>
+<td style="text-align: left;">“Final edit of 8 to 10”</td>
 </tr>
 </tbody>
 </table>
@@ -3113,64 +3127,79 @@ vertical-align: -.125em;
 <span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="fu">## Prompt 8: Review the Repository History</span></span>
 <span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Review the repository&#39;s commit history after both collaboration rounds. What evidence shows that all members worked through Git and GitHub rather than exchanging separate files?...</span></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>**Principal Author:** Alexa Bueno</span>
 <span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>**Principal Author:** <span class="sc">\[</span>Author Name<span class="sc">\]</span></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>Looking at our repository&#39;s commit history, you can see entries tied to different usernames, \@rsabilla, \@brianvuong1, \@kbachez, and \@buenoalexa11, rather than one person uploading a finished file. That alone shows the report was actually built through Git instead of being assembled outside of it and dropped in. The sequence also makes sense chronologically: early commits set up the folder and file structure, then each member&#39;s Round 1 commit adds their assigned content (&quot;address prompt 5 to 7,&quot; &quot;Address prompt 8 to 10,&quot; &quot;address prompt 3 and 4&quot;), and Round 2 commits show people going back through the report to review and add to it, like Brian&#39;s &quot;added member commit record.&quot; That progression, content getting added first and then refined later, is exactly what you&#39;d expect from a two-round collaboration process, and it wouldn&#39;t show up at all if we had just emailed a Word doc back and forth. The most effective commit message in our history is &quot;address prompt 5 to 7,&quot; because it tells you precisely what content was added without needing to open the file to check. That&#39;s a clear contrast to some of the shorter messages elsewhere in our log, like &quot;edit&quot; or &quot;edits,&quot; which don&#39;t tell a future reader anything about what actually changed. A specific message like that one is what makes the project history genuinely useful later, since you can find exactly when a section was written just by scanning the log instead of digging through every commit.</span>
 <span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a><span class="sc">\[</span>Insert your group&#39;s response here. Look at the Git commit graph and timestamps.<span class="sc">\]</span></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a><span class="fu">## Prompt 9: Security, Confidentiality, and Repository Hygiene</span></span>
 <span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a><span class="fu">## Prompt 9: Security, Confidentiality, and Repository Hygiene</span></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>**Principal Author:** Alexa Bueno</span>
 <span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Explain what materials must never be pushed to the CEP repository, even when it is private...</span></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>There are certain things that should never end up in the CEP repository no matter what, even though it&#39;s currently private. This includes any real client data, especially anything that could identify a specific company or person, since the assignment instructions specifically told us to use a fake name for our client rather than the real one. It also includes personally identifiable information about survey respondents, passwords, API keys, and access tokens like the ones we&#39;d use to connect to GA4 or BigQuery. These are the kind of things that if accidentally pushed, stay in the commit history forever even if you delete the file afterward, since Git keeps a record of every version. This is where a .gitignore file matters, because it tells Git which files or file types to automatically ignore so they never get staged in the first place, things like local environment files, temporary render files, or anything with credentials in the name. If someone on our team is ever unsure whether something is okay to push, the safest move is to just ask the rest of the group or the professor before committing it, rather than pushing first and hoping it&#39;s fine. Once something is on GitHub, especially if the repo gets made public later for the Pages site to work, there&#39;s no guarantee it can be fully removed.</span>
 <span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a>**Principal Author:** <span class="sc">\[</span>Author Name<span class="sc">\]</span></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a><span class="fu">## Prompt 10: Group Collaboration Agreement</span></span>
 <span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a><span class="sc">\[</span>Insert your group&#39;s response here. Discuss API keys, <span class="in">`.gitignore`</span>, and asking for help before pushing if unsure.<span class="sc">\]</span></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; All members of this group have reviewed this agreement and agree to follow it for the remainder of the CEP.</span></span>
 <span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a><span class="fu">## Prompt 10: Group Collaboration Agreement</span></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>**Principal Author:** Alexa Bueno</span>
 <span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Develop a short Git/GitHub collaboration agreement that your group will follow for the remainder of the CEP... Place the agreement in a callout block. Every member should review it, and the report should state that all members agree to follow it.</span></span>
-<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>**Principal Author:** <span class="sc">\[</span>Author Name<span class="sc">\]</span></span>
-<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>All members of this group have reviewed and agree to abide by the following protocol:</span>
-<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>::: {.callout-note title=&quot;Group Collaboration Agreement&quot;}</span>
-<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Pull/Push Frequency:** We will pull at the start of every work session and push immediately after completing a cohesive chunk of work.</span>
-<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Task Assignment:** Tasks will be assigned via <span class="sc">\[</span>Discord/GitHub Issues<span class="sc">\]</span>.</span>
-<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Simultaneous Editing:** We will strictly avoid editing the same file concurrently.</span>
-<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Commit Messages:** Messages will be written in the imperative mood and clearly state what the commit changes (e.g., &quot;Add EDA scatterplot&quot;).</span>
-<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Branches/PRs:** We will use branches and Pull Requests for large structural changes or new analytical models.</span>
-<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Conflict Resolution:** If a conflict occurs, the member who encounters it will resolve it using Positron/RStudio, communicate with the involved partner if uncertain, and test the render before pushing.</span>
-<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Rendering:** The author of a commit is responsible for ensuring the report successfully renders locally before pushing.</span>
-<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Security:** No API keys, tokens, or raw confidential client data will ever be committed. We will utilize our <span class="in">`.gitignore`</span> file strictly.</span>
-<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>::: {.callout-note title=&quot;Group Collaboration Agreement&quot;}</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Pulling and pushing:** Everyone pulls before starting any edit session and pushes as soon as a section is finished, not at the end of the day.</span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- --&gt;</span></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Task assignment:** Sections are assigned in our group chat before anyone starts editing, so two people aren&#39;t working on the same part without knowing it.</span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- --&gt;</span></span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Simultaneous editing:** We do not edit the same file at the same time. Whoever is working on a section says so in the chat, and says again once they&#39;ve pushed.</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- --&gt;</span></span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Commit messages:** Messages describe what was actually changed, written in plain language (for example &quot;Add Prompt 9 response&quot; instead of &quot;update&quot;).</span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- --&gt;</span></span>
 <span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Branches and pull requests:** We&#39;ll use a branch and pull request for anything that touches the structure of the whole report, like a big formatting change or something that could break the render for everyone. Small, coordinated edits to one section can go straight to main.</span>
 <span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a><span class="fu"># Appendix: Collaboration Evidence {#sec-appendix}</span></span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- --&gt;</span></span>
 <span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a>Detailed collaboration logs and repository links are provided below.</span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Conflict resolution:** If a push gets rejected or a conflict pops up, the person who hit it pulls, resolves the conflict markers in Positron, checks with the other person if it&#39;s unclear what to keep, and renders before pushing again.</span>
 <span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a><span class="fu">### Member Commit Records</span></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- --&gt;</span></span>
 <span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Member Name <span class="pp">|</span> GitHub Username <span class="pp">|</span> Round 1 Commit Message <span class="pp">|</span> Round 2 Commit Message <span class="pp">|</span></span>
-<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a><span class="pp">|:-----------------|:-----------------|:-----------------|:-----------------|</span></span>
-<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="sc">\[</span>Ron Sabilla<span class="sc">\]</span> <span class="pp">|</span> <span class="co">[</span><span class="ot">@rsabilla</span><span class="co">]</span> <span class="pp">|</span> &quot;Kevin, Alexa, and Brian don&#39;t forget to choose what prompts to work on. I did the first two.&quot; <span class="pp">|</span> &quot;Made some edits to prompt 1 and 2.&quot; <span class="pp">|</span></span>
-<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="sc">\[</span>Brian Vuong<span class="sc">\]</span> <span class="pp">|</span> <span class="co">[</span><span class="ot">@brianvuong1</span><span class="co">]</span> <span class="pp">|</span> &quot;address prompt 5 to 7&quot; <span class="pp">|</span> &quot;added member commit record&quot; <span class="pp">|</span></span>
-<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="sc">\[</span>Name 3<span class="sc">\]</span> <span class="pp">|</span> <span class="co">[</span><span class="ot">@username</span><span class="co">]</span> <span class="pp">|</span> &quot;<span class="sc">\[</span>Message<span class="sc">\]</span>&quot; <span class="pp">|</span> &quot;<span class="sc">\[</span>Message<span class="sc">\]</span>&quot; <span class="pp">|</span></span>
-<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="sc">\[</span>Name 4<span class="sc">\]</span> <span class="pp">|</span> <span class="co">[</span><span class="ot">@username</span><span class="co">]</span> <span class="pp">|</span> &quot;<span class="sc">\[</span>Message<span class="sc">\]</span>&quot; <span class="pp">|</span> &quot;<span class="sc">\[</span>Message<span class="sc">\]</span>&quot; <span class="pp">|</span></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Render verification:** Whoever makes a commit is responsible for confirming the report renders cleanly on their end before pushing.</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- --&gt;</span></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Confidentiality:** No real client names, credentials, or personal data go into the repository. We use a placeholder name for the client throughout.</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a><span class="fu">### Project Links</span></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
 <span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**GitHub Repository:** https://github.com/rsabilla/private</span>
-<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**GitHub Pages Published Report:** <span class="sc">\[</span>Insert Link Here<span class="sc">\]</span></span>
-<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Repository Commit History:** <span class="sc">\[</span>Insert Link Here<span class="sc">\]</span></span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a><span class="fu"># Appendix: Collaboration Evidence {#sec-appendix}</span></span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>Detailed collaboration logs and repository links are provided below.</span>
 <span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="fu">### Verification Statements</span></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="fu">### Member Commit Records</span></span>
 <span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Workflow Confirmation:** All members confirm that they exclusively used Positron to pull, commit, and push their changes for this project.</span>
-<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>**Finalization:** The final pull, render, link check, and push were performed by **\[Insert Name of Final Reviewer\]**.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></div>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Member Name <span class="pp">|</span> GitHub Username <span class="pp">|</span> Round 1 Commit Message <span class="pp">|</span> Round 2 Commit Message <span class="pp">|</span></span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a><span class="pp">|:-----------------|:-----------------|:-----------------|:-----------------|</span></span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="sc">\[</span>Ron Sabilla<span class="sc">\]</span> <span class="pp">|</span> <span class="co">[</span><span class="ot">@rsabilla</span><span class="co">]</span> <span class="pp">|</span> &quot;Kevin, Alexa, and Brian don&#39;t forget to choose what prompts to work on. I did the first two.&quot; <span class="pp">|</span> &quot;Made some edits to prompt 1 and 2.&quot; <span class="pp">|</span></span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="sc">\[</span>Brian Vuong<span class="sc">\]</span> <span class="pp">|</span> <span class="co">[</span><span class="ot">@brianvuong1</span><span class="co">]</span> <span class="pp">|</span> &quot;address prompt 5 to 7&quot; <span class="pp">|</span> &quot;added member commit record&quot; <span class="pp">|</span></span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="sc">\[\]</span> <span class="pp">|</span> <span class="sc">\[\]</span> <span class="pp">|</span>  <span class="pp">|</span> &quot;<span class="sc">\[</span>Message<span class="sc">\]</span>&quot; <span class="pp">|</span></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="sc">\[</span>Alexa Bueno<span class="sc">\]</span> <span class="pp">|</span> <span class="sc">\[</span>buenoalexa11<span class="sc">\]</span> <span class="pp">|</span> &quot;Address prompt 8 to 10&quot; <span class="pp">|</span> &quot;Final edit of 8 to 10&quot; <span class="pp">|</span></span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a><span class="fu">### Project Links</span></span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**GitHub Repository:** https://github.com/rsabilla/private</span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**GitHub Pages Published Report:** <span class="sc">\[</span>Insert Link Here<span class="sc">\]</span></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Repository Commit History:** <span class="sc">\[</span>Insert Link Here<span class="sc">\]</span></span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a><span class="fu">### Verification Statements</span></span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Workflow Confirmation:** All members confirm that they exclusively used Positron to pull, commit, and push their changes for this project.</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Finalization:** The final pull, render, link check, and push were performed by **\[Insert Name of Final Reviewer\]**.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
