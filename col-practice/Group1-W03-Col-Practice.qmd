@@ -106,7 +106,7 @@ This structured approach contrasts heavily with committing directly to the `main
 
 **Principal Author:** Alexa Bueno
 
-Looking at our repository's commit history, you can see entries tied to different usernames, \@rsabilla, \@brianvuong1, \@kbachez, and \@buenoalexa11, rather than one person uploading a finished file. That alone shows the report was actually built through Git instead of being assembled outside of it and dropped in. The sequence also makes sense chronologically: early commits set up the folder and file structure, then each member's Round 1 commit adds their assigned content ("address prompt 5 to 7," "Address prompt 8 to 10," "address prompt 3 and 4"), and Round 2 commits show people going back through the report to review and add to it, like Brian's "added member commit record." That progression, content getting added first and then refined later, is exactly what you'd expect from a two-round collaboration process, and it wouldn't show up at all if we had just emailed a Word doc back and forth. The most effective commit message in our history is "address prompt 5 to 7," because it tells you precisely what content was added without needing to open the file to check. That's a clear contrast to some of the shorter messages elsewhere in our log, like "edit" or "edits," which don't tell a future reader anything about what actually changed. A specific message like that one is what makes the project history genuinely useful later, since you can find exactly when a section was written just by scanning the log instead of digging through every commit.
+Looking at our repository's commit history, you can see entries tied to different usernames, \@rsabilla, \@brianvuong1, \@kbachez, and \@buenoalexa11, rather than one person uploading a finished file. That alone shows the report was actually built through Git instead of being assembled outside of it and dropped in. The sequence also makes sense chronologically: early commits set up the folder and file structure, then each member's Round 1 commit adds their assigned content ("address prompt 5 to 7," "Address prompt 8 to 10," "address prompt 3 and 4"), and Round 2 commits show people going back through the report to review and add to it, like Brian's "added member commit record." That progression, content getting added first and then refined later, is exactly what you'd expect from a two-round collaboration process, and it wouldn't show up at all if we had just emailed a Word doc back and forth. The most effective commit message in our history is "address prompt 5 to 7," because it tells you precisely what content was added without needing to open the file to check. That's a clear contrast to some of the shorter messages elsewhere in our log, like "edit" or "edits," which don't tell a future reader anything about what actually changed. A specific message like that one is what makes the project history useful later, since you can find exactly when a section was written just by scanning the log instead of digging through every commit.
 
 ## Prompt 9: Security, Confidentiality, and Repository Hygiene
 
@@ -122,34 +122,13 @@ There are certain things that should never end up in the CEP repository no matte
 
 ::: {.callout-note title="Group Collaboration Agreement"}
 - **Pulling and pushing:** Everyone pulls before starting any edit session and pushes as soon as a section is finished, not at the end of the day.
-
-<!-- -->
-
 - **Task assignment:** Sections are assigned in our group chat before anyone starts editing, so two people aren't working on the same part without knowing it.
-
-<!-- -->
-
 - **Simultaneous editing:** We do not edit the same file at the same time. Whoever is working on a section says so in the chat, and says again once they've pushed.
-
-<!-- -->
-
 - **Commit messages:** Messages describe what was actually changed, written in plain language (for example "Add Prompt 9 response" instead of "update").
-
-<!-- -->
-
 - **Branches and pull requests:** We'll use a branch and pull request for anything that touches the structure of the whole report, like a big formatting change or something that could break the render for everyone. Small, coordinated edits to one section can go straight to main.
-
-<!-- -->
-
 - **Conflict resolution:** If a push gets rejected or a conflict pops up, the person who hit it pulls, resolves the conflict markers in Positron, checks with the other person if it's unclear what to keep, and renders before pushing again.
-
-<!-- -->
-
 - **Render verification:** Whoever makes a commit is responsible for confirming the report renders cleanly on their end before pushing.
-
-<!-- -->
-
-- **Confidentiality:** No real client names, credentials, or personal data go into the repository. We use a placeholder name for the client throughout.
+- **Confidentiality:** No real client names, credentials, or personal data go into the repository. We use a placeholder name for the client throughout
 :::
 
 ------------------------------------------------------------------------
