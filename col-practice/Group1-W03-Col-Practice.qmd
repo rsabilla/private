@@ -149,10 +149,10 @@ Detailed collaboration logs and repository links are provided below.
 | [Name 4] | [@username] | "[Message]" | "[Message]" |
 
 ### Project Links
-*   **GitHub Repository:** [Insert Link Here]
+*   **GitHub Repository:** https://github.com/rsabilla/private
 *   **GitHub Pages Published Report:** [Insert Link Here]
 *   **Repository Commit History:** [Insert Link Here]
 
 ### Verification Statements
-*   **Workflow Confirmation:** All members confirm that they exclusively used Positron, RStudio, or the IDE Terminal to pull, commit, and push their changes for this project.
+*   **Workflow Confirmation:** All members confirm that they exclusively used Positron to pull, commit, and push their changes for this project.
 *   **Finalization:** The final pull, render, link check, and push were performed by **[Insert Name of Final Reviewer]**.
