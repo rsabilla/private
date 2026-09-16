@@ -64,7 +64,6 @@ execute:
 ## Prompt 5: Coordinating Work and Preventing Merge Conflicts (Brian)
 > Explain what may happen when two people edit the same lines of the same QMD file and then attempt to push their work. Describe at least three practices your group will use during the CEP to reduce merge conflicts. Include how your group will divide sections, communicate who is editing, and decide when work is ready for another member.
 
-**Principal Author:** [Author Name]
 
 When two collaborators edit the exact same lines of a QMD file simultaneously, Git cannot automatically determine which version to keep. The first person to push their changes to the remote repository will succeed. However, when the second person attempts to push, Git will reject the action to prevent overwriting the first person's work. The second person must then pull the recent changes, which triggers a "merge conflict." The file will be populated with conflict markers (showing both versions), and the second person must manually resolve the discrepancies before they can successfully complete their commit and push.
 
@@ -84,7 +83,6 @@ We will make small, frequent commits and push our work regularly. Shorter work c
 ## Prompt 6: Responding to a Push Rejection or Merge Conflict (Brian)
 > Consider this situation: A group member edits the report without pulling first. Meanwhile, another member pushes changes to the same section. Git rejects the first member's push, and a merge conflict appears after pulling. Explain, in order, what the first member should do... Also explain why force-pushing, deleting a teammate's work, or replacing the repository with an older local copy would be inappropriate.
 
-**Principal Author:** [Author Name]
 
 When a push is rejected due to upstream changes, the first member must immediately pull from the remote repository. This action will trigger a merge conflict notification. The member should then open the affected QMD file in Positron's Merge Editor[^1] or look for standard Git conflict markers (`<<<<<<< HEAD`, `=======`, `>>>>>>>`). These markers visually separate the local changes from the incoming changes. The member must carefully compare the two versions, edit the text to keep the desired content (which may be a combination of both), and completely delete all conflict markers. Finally, they must render the document to ensure the formatting is unbroken, save the file, stage it, commit the resolved merge, and push it to GitHub.
 
@@ -95,7 +93,6 @@ It is absolutely critical to handle conflicts through this established resolutio
 ## Prompt 7: Branches, Issues, and Pull Requests (Brian)
 > Based on the collaboration video, explain the purposes of a GitHub Issue, a branch, and a pull request. How could these tools support task assignment, review, and approval during a longer CEP project? Contrast this approach with making a small, coordinated change directly on the main branch. Identify at least one situation in which your group should prefer a branch and pull request.
 
-**Principal Author:** [Author Name]
 
 In a structured GitHub workflow, an **Issue** acts as a tracking ticket for a specific bug, task, or feature, allowing the team to assign responsibilities and discuss requirements before coding begins. A **branch** provides a safe, isolated workspace where a team member can develop a feature without affecting the stable `main` codebase. Once the work on the branch is complete, a **Pull Request (PR)** is opened. A PR is a formal request to merge the branch into `main`, providing a dedicated space for teammates to review the code, suggest edits, and ensure the project renders correctly before final approval. For a long-term CEP project, these tools create a clear audit trail of who is doing what, ensure quality control through peer review, and prevent unstable code from breaking the final report.
 
